@@ -1,3 +1,5 @@
+// package caesars_cipher;
+
 public class CaesarsCipher {
     
     private static final char LETTER_A = 'a';
@@ -5,9 +7,11 @@ public class CaesarsCipher {
     private static final int ALPHABET_SIZE = 26;
 
     private void offsetBy(char[] character, int offset){
+        // 
         for(int i=0;i<character.length; ++i){
             character[i] = offsetChar(character[i], offset, LETTER_A, LETTER_Z);
         }   
+        
     }
 
     private char offsetChar(char c, int offset, char letterA, char letterZ){
